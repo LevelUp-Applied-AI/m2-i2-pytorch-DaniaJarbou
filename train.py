@@ -111,6 +111,7 @@ def main():
         'actual': actuals_np,
         'predicted': predictions_np
     })   
-     
+    results_df.to_csv('predictions.csv', index=False)
+    print("Saved predictions.csv")
 if __name__ == "__main__":
     main()
